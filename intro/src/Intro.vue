@@ -7,7 +7,7 @@
     <div class="showcase-page" ref="pageContainerRef">
       <section class="scroll-section hero">
         <div class="content">
-          <h1 class="hero-title">幻语</h1>
+          <h1 class="hero-title">幻语次原</h1>
           <p class="hero-subtitle">与你最爱的角色，开启一场真实的沉浸式对话</p>
         </div>
       </section>
@@ -274,9 +274,9 @@ const pageContainerRef = ref<HTMLElement | null>(null);
 
 const mainAppUrl = ref('http://localhost:5173/login');
 const members = ref([
-  { id: 'jzc', name: '江在程', photo: 'http://t44sz3r3c.hn-bkt.clouddn.com/%E7%AE%80%E5%8E%86%E7%85%A7%E7%89%87/%E6%B1%9F%E5%9C%A8%E7%A8%8B_%E7%AE%80%E5%8E%86%E7%85%A7.jpg', role: 'Java后端 / TTS', contributions: ['用户认证与会话管理', '对象存储与文件服务', 'LangChain4j集成与提示词工程', 'GPT-SoVITS语音合成接口封装'] },
-  { id: 'lwj', name: '李文杰', photo: 'http://t44sz3r3c.hn-bkt.clouddn.com/%E7%AE%80%E5%8E%86%E7%85%A7%E7%89%87/%E6%9D%8E%E6%96%87%E6%9D%B0_%E7%AE%80%E5%8E%86%E7%85%A7.jpg', role: 'Java后端 / 语音处理', contributions: ['阿里云ASR服务集成与SDK重构', 'AI模型调度与异常熔断', '用户信息管理模块', '数据库存储优化与数据校验'] },
-  { id: 'lzy', name: '刘镇源', photo: 'http://t44sz3r3c.hn-bkt.clouddn.com/%E7%AE%80%E5%8E%86%E7%85%A7%E7%89%87/%E5%88%98%E9%95%87%E6%BA%90_%E7%AE%80%E5%8E%86%E7%85%A7.jpg', role: '前端开发工程师', contributions: ['Vue3 + TS 前端架构设计', 'WebSocket实时通信与音频处理', '用户认证与个人中心全流程开发', '双模式聊天界面设计与实现', '整体应用的UI/UX打磨与交互优化'] }
+  { id: 'jzc', name: '江在程', photo: '/江在程_简历照.jpg', role: 'Java后端 / TTS', contributions: ['用户认证与会话管理', '对象存储与文件服务', 'LangChain4j集成与提示词工程', 'GPT-SoVITS语音合成接口封装','部分前端接口连接代码'] },
+  { id: 'lwj', name: '李文杰', photo: '/李文杰_简历照.jpg', role: 'Java后端 / 语音处理', contributions: ['阿里云ASR服务集成与SDK重构', '用户信息管理模块', '数据库存储优化与数据校验','AI模型调度与结果转发'] },
+  { id: 'lzy', name: '刘镇源', photo: '/刘镇源_简历照.jpg', role: '前端开发工程师', contributions: ['Vue3 + TS 前端架构设计', 'WebSocket实时通信与音频处理', '用户认证与个人中心全流程开发', '双模式聊天界面设计与实现', '整体应用的UI/UX打磨与交互优化'] }
 ]);
 const selectedMemberId = ref<string | null>(null);
 const selectMember = (id: string | null) => {

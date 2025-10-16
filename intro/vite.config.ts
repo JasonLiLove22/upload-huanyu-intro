@@ -15,8 +15,4 @@ export default defineConfig({
       '@': fileURLToPath(new URL('./src', import.meta.url))
     },
   },
-  server: {
-    host: '0.0.0.0', // 允许局域网/外网访问
-    port: 5173,      // 端口号
-  },
 })
